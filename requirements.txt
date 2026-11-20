@@ -1,1 +1,6 @@
-
+streamlit
+requests
+numpy
+soundfile
+python-docx
+reportlab
