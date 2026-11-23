@@ -41,12 +41,12 @@ if audio_file is not None:
       if not api_key:
         st.error("Sarvam API key is missing.")
       else:
-        with st.spinner("Transcribing your audio...")
-        transcript=transcribe_audio(
-          audio_bytes,api_key,language
-        )
-        st.sessiom_state.transcript=transcript
-        st.success("Transcription completed!")
+        with st.spinner("Transcribing your audio..."):
+              transcript=transcribe_audio(
+                audio_bytes,api_key,language
+              )
+              st.sessiom_state.transcript=transcript
+              st.success("Transcription completed!")
   except exception as error:
         st.error(f"Error:{error}")
   if st.session_state.transcript:
