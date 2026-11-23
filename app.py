@@ -48,7 +48,7 @@ if audio_file is not None:
               )
               st.sessiom_state.transcript=transcript
               st.success("Transcription completed!")
-  except exception as error:
+  except Exception as error:
         st.error(f"Error:{error}")
   if st.session_state.transcript:
       st.subheader("Your Transcript")
