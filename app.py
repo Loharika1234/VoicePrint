@@ -37,7 +37,7 @@ if audio_file is not None:
     if duration>30:
       st.error("Recording exceeds 30 seconds.Please record a shorter clip.")
     elif st.button("🎤 transcibe audio"):
-      api_key=st.secrets.get(" ")
+      api_key=st.secrets.get("sk_3colcoa0_J9oQbVj4DYyURpr2pbGFC578")
       if not api_key:
         st.error("Sarvam API key is missing.")
       else:
