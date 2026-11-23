@@ -46,7 +46,7 @@ if audio_file is not None:
           audio_bytes,api_key,language
         )
         st.sessiom_state.transcript=transcript
-        st.success(Transcription completed!")
+        st.success("Transcription completed!")
   except exception as error:
         st.error(f"Error:{error}")
   if st.session_state.transcript:
